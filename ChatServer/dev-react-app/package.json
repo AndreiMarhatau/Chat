@@ -1,0 +1,82 @@
+{
+  "name": "dev-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.36",
+    "@types/node-sass": "^4.11.0",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.6",
+    "@types/react-redux": "^7.1.7",
+    "@types/react-router-dom": "^5.1.4",
+    "@types/react-window": "^1.8.2",
+    "@types/redux-actions": "^2.6.1",
+    "classnames": "^2.2.6",
+    "material-ui-search-bar": "^0.4.2",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-window": "^1.8.5",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "start:dev": "react-scripts start",
+    "start": "webpack-dev-server --config webpack.config.js",
+    "build": "webpack --config webpack.prod.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.9.11",
+    "@types/redux-devtools-extension": "^2.13.2",
+    "autoprefixer": "^9.7.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-loader": "^3.0.0",
+    "redux-devtools-extension": "^2.13.8",
+    "sass-loader": "^8.0.2",
+    "source-map-loader": "^0.2.4",
+    "style-loader": "^1.1.4",
+    "ts-loader": "^7.0.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dashboard": "^3.2.0",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "optionalDependencies": {
+    "@material-ui/icons": "^4.9.1"
+  }
+}

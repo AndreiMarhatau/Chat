@@ -1,0 +1,20 @@
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90px;
+}
+
+.header-common{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 3;
+}
+
+.header-sign{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: .5;
+}

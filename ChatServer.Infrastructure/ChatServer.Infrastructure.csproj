@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChatServer.Services.Infrastructure\ChatServer.Services.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

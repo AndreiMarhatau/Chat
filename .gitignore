@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ChatServer
+/ChatServer.Infrastructure/bin/Debug
+/ChatServer.Services.Infrastructure/bin/Debug
+/ChatServer.Services.Infrastructure/obj
+/ChatServer.Services/obj
+/ChatServer.Services/bin/Debug
+/ChatServer.Repositories.Infrastructure/obj
+/ChatServer.Repositories.Infrastructure/bin/Debug
+/ChatServer.Repositories/obj
+/ChatServer.Repositories/bin/Debug/netcoreapp3.1
+/ChatServer.Infrastructure/obj
+/ChatServer/dev-react-app/dist
+/ChatServer/dev-react-app/node_modules
