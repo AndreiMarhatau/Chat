@@ -2,7 +2,7 @@
   "compilerOptions": {
     "sourceMap": true,
     "target": "es2018",
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -23,5 +23,8 @@
   "include": [
     "src",
     "public"
+  ],
+  "exclude": [
+    "node-modules"
   ]
 }

@@ -6,6 +6,7 @@ import AuthContainer from "./containers/AuthContainer/AuthContainer";
 import { useSelector } from "react-redux";
 import { isUserLoggedSelector } from "./selectors/user-logged.selector";
 import MainContainer from "./containers/MainContainer/MainContainer";
+import ProfileContainer from "./containers/ProfileContainer/ProfileContainer";
 
 
 export const Routes = () => {
@@ -51,7 +52,7 @@ export const Routes = () => {
     <Route
       path={routesMap.Profile.route}
       exact={routesMap.Profile.exact}
-      render={() => <div>Профиль</div>} />
+      component={ProfileContainer} />
 
   if (!isUserLogged)
     return (

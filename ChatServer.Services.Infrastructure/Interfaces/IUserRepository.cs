@@ -15,5 +15,7 @@ namespace ChatServer.Services.Infrastructure.Interfaces
         Task<User> AddNewUser(Credentials credentials);
         Task<List<User>> GetUsers(List<int> userIds);
         Task<List<User>> GetUsersByLogin(string login);
+        Task<UserWithPassword> GetUserWithPassword(int id);
+        Task UpdatePassword(int id, string newPassword);
     }
 }

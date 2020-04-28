@@ -4,7 +4,7 @@ import Logo from "./Logo/Logo";
 import Search from "./Search/Search";
 import SignIn from "./LoginButtons/SignIn/SignIn";
 import SignUp from "./LoginButtons/SignUp/SignUp";
-import Help from "./Help";
+import Help from "./Help/Help";
 import ProfileButton from "./Profile/ProfileButton";
 import styles from './HeaderContainer.scss';
 import { styleNames } from "../../services/styleNames";

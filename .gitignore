@@ -15,3 +15,4 @@
 /ChatServer.Infrastructure/obj
 /ChatServer/dev-react-app/dist
 /ChatServer/dev-react-app/node_modules
+/.vs

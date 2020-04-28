@@ -73,5 +73,14 @@ namespace ChatServer.Controllers
         {
             return await _userService.GetUsersByLogin(login);
         }
+
+        [HttpPost]
+        [Route("change-password")]
+        public async Task ChangePassword([FromBody]PasswordForChange passwords)
+        {
+            await _userService.ChangePassword(
+                await _userService.GetCurrentUserByToken(HttpContext.Request.Cookies["token"]),
+                passwords);
+        }
     }
 }

@@ -24,6 +24,21 @@ namespace ChatServer.Services.UserService
             this._userRepository = userRepository;
             this._tokenRepository = tokenRepository;
         }
+
+        public async Task ChangePassword(UserModel userModel, PasswordForChange passwords)
+        {
+            UserWithPassword user = await _userRepository.GetUserWithPassword(userModel.Id);
+
+            if (user.Password == passwords.OldPassword)
+            {
+                await _userRepository.UpdatePassword(user.Id, passwords.NewPassword);
+            }
+            else
+            {
+                throw new Exception();
+            }
+        }
+
         public async Task<UserModel> GetCurrentUserByToken(string v)
         {
             User user = await _tokenRepository.GetUser(v);

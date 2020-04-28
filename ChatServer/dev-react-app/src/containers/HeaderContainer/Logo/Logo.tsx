@@ -8,7 +8,7 @@ const sn = styleNames(styles);
 
 
 const Logo: React.FC = () => {
-  return (<NavLink to={routesMap.Main.route}><img className={sn('logo')} src={'../../../public/logo.png'} alt='logo'/></NavLink>);
+  return (<NavLink to={routesMap.Main.route}><img className={sn('logo')} src={'public/logo.png'} alt='logo'/></NavLink>);
 }
 
 export default Logo;

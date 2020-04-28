@@ -1,9 +1,9 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin'); // Require  html-webpack-plugin plugin
 const DashboardPlugin = require('webpack-dashboard/plugin');
 const path = require('path');
 
 const PATH = {
-  SRC: path.join(__dirname, 'src')
+  SRC: path.join(__dirname, 'src'),
+  PUBLIC: path.join(__dirname, 'public')
 };
 
 module.exports = {
@@ -16,6 +16,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
     alias: {
+      public: path.resolve(PATH.PUBLIC),
       src: path.resolve(PATH.SRC)
     }
   },
@@ -45,26 +46,6 @@ module.exports = {
     ]
   },
   plugins: [  // Array of plugins to apply to build chunk
-    new HtmlWebpackPlugin({
-      template: __dirname + "/src/index.html",
-      inject: 'body'
-    }),
     new DashboardPlugin(),
-  ],
-  devtool: 'source-map',
-  devServer: {  // configuration for webpack-dev-server
-    compress: true,
-    hot: true,
-    open: true,
-    https: true,
-    port: process.env.PORT || 3000,
-    overlay: {
-      warnings: true,
-      errors: true
-    },
-    stats: {
-      colors: true
-    },
-    historyApiFallback: true
-  },
+  ]
 }

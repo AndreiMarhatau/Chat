@@ -9,7 +9,7 @@ import { getUser } from './actions/user-login.action';
 function App() {
   const dispatch = useDispatch();
 
-  dispatch(getUser());
+  useEffect(() => { dispatch(getUser()); });
   return (
     <BrowserRouter>
       <Route component={Routes}></Route>

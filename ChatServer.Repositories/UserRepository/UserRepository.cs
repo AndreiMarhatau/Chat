@@ -66,5 +66,24 @@ namespace ChatServer.Repositories.UserRepository
                     .ToListAsync())
                 .Select(user => user.ToServiceModel()).ToList();
         }
+
+        public async Task<UserWithPassword> GetUserWithPassword(int id)
+        {
+            var user = await _context.Users.FindAsync(id);
+            return new UserWithPassword()
+            {
+                Id = user.Id,
+                Login = user.Login,
+                Password = user.Password
+            };
+        }
+
+        public async Task UpdatePassword(int id, string newPassword)
+        {
+            var user = await _context.Users.FindAsync(id);
+            user.Password = newPassword;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -14,5 +14,6 @@ namespace ChatServer.Infrastructure.Interfaces
         Task<string> Register(UserLogin user);
         Task SignOut(string v);
         Task<List<UserModel>> GetUsersByLogin(string login);
+        Task ChangePassword(UserModel userModel, PasswordForChange passwords);
     }
 }

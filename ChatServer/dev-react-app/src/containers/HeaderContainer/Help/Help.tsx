@@ -1,5 +1,5 @@
 import React from "react"
-import { routesMap } from "../../constants/routes";
+import { routesMap } from "../../../constants/routes";
 import { NavLink } from "react-router-dom";
 import { Button } from "@material-ui/core";
 

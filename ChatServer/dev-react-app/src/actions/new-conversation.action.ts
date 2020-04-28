@@ -7,7 +7,6 @@ import { Dispatch } from "redux";
 export const newConvAction = createAction("NEW_CONVERSATION");
 
 export const newConv = (data: INewUserChat) => (dispatch: Dispatch) => {
-  console.log(data);
   fetch(`${apiHost}api/chat/create-conversation`, {
     method: 'POST',
     body: JSON.stringify(data),
