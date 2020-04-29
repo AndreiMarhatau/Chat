@@ -17,8 +17,7 @@
       "dom.iterable",
       "esnext"
     ],
-    "moduleResolution": "node",
-    "noEmit": true
+    "moduleResolution": "node"
   },
   "include": [
     "src",
