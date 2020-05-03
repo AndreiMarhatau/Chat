@@ -82,10 +82,10 @@ namespace ChatServer
             {
                 spa.Options.SourcePath = "dev-react-app";
 
-                if (env.IsDevelopment())
-                {
-                    spa.UseReactDevelopmentServer(npmScript: "start:dev");
-                }
+                //if (env.IsDevelopment())
+                //{
+                //    spa.UseReactDevelopmentServer(npmScript: "build:dev");
+                //}
             });
         }
     }

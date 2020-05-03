@@ -16,3 +16,9 @@
 /ChatServer/dev-react-app/dist
 /ChatServer/dev-react-app/node_modules
 /.vs
+/ChatServer/.config
+/ChatServer.Services.Infrastructure/bin/Release/netcoreapp3.1
+/ChatServer.Services/bin/Release/netcoreapp3.1
+/ChatServer.Repositories.Infrastructure/bin/Release/netcoreapp3.1
+/ChatServer.Repositories/bin/Release/netcoreapp3.1
+/ChatServer.Infrastructure/bin/Release/netcoreapp3.1

@@ -25,8 +25,28 @@ module.exports = merge(common, {
     historyApiFallback: true
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: `${PATH.SRC}/index.html`
-    })
+
+    new HtmlWebpackPlugin(
+      {
+        inject: true,
+        template: `${PATH.SRC}/index.html`,
+      },
+      process.env.NODE_ENV === 'production'
+        ? {
+          minify: {
+            removeComments: true,
+            collapseWhitespace: true,
+            removeRedundantAttributes: true,
+            useShortDoctype: true,
+            removeEmptyAttributes: true,
+            removeStyleLinkTypeAttributes: true,
+            keepClosingSlash: true,
+            minifyJS: true,
+            minifyCSS: true,
+            minifyURLs: true,
+          },
+        }
+        : undefined
+    ),
   ]
 });

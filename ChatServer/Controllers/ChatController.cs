@@ -38,7 +38,8 @@ namespace ChatServer.Controllers
         {
             var currentUserId = (await _userService.GetCurrentUserByToken(
                 HttpContext.Request.Cookies["token"])).Id;
-            return await _chatService.GetConversations(currentUserId);
+            var convs = await _chatService.GetConversations(currentUserId);
+            return convs;
         }
 
         [HttpPost]

@@ -6,16 +6,10 @@ import { newConvAction } from '../actions/new-conversation.action';
 export const chatListReducer = handleActions(
   {
     [`${getChatsAction}`]: (state, { payload }) => {
-      if(!(state.length === payload.length && state.every((v,i)=>v === payload[i]))){
-        state = payload;
-      }
-      return state;
+      return payload;
     },
     [`${newConvAction}`]: (state, { payload }) => {
-      if(!(state.length === payload.length && state.every((v,i)=>v === payload[i]))){
-        state = payload;
-      }
-      return state;
+      return payload;
     },
   }, []
 );
