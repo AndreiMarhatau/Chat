@@ -19,7 +19,6 @@ module.exports = {
     filename: 'bundle.js',  // Name of generated bundle after build
     publicPath: '/' // public URL of the output directory when referenced in a browser
   },
-  watch: true,
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
     alias: {

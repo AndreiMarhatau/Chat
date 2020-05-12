@@ -7,6 +7,7 @@ import { userSelector } from "../../../../selectors/user-login.selector";
 import { useSelector } from "react-redux";
 import { IChatProps } from "./interfaces/IChatProps";
 import ThreeSixtyIcon from '@material-ui/icons/ThreeSixty';
+import moment from "moment";
 
 const sn = styleNames(styles);
 
@@ -18,7 +19,7 @@ const ChatItem: React.FC<IChatProps> = (data: IChatProps) => {
   <Card className={sn(`msg msg__${msg.id} msg__${msg.ownerId === user.id ? 'right' : 'left'}`)}>
     <CardContent>
       <Typography color="textSecondary" gutterBottom>
-        {msg.date.toString()}
+        {moment(msg.date).format("DD.MM.YYYY hh:mm:ss")}
       </Typography>
       <Typography variant="body2" component="p">
         {msg.message}

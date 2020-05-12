@@ -1,16 +1,16 @@
 .chat {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: start;
   min-width: 500px;
-  max-height: 90vh;
+  max-height: 60vh;
   overflow: auto;
 }
 .msg__right{
   align-self: flex-end;
 }
 .msg__left{
-  align-self: start;
+  align-self: flex-start;
 }
 .msg {
   margin: 5px;

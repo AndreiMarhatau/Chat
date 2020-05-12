@@ -27,7 +27,6 @@ namespace ChatServer.Repositories.MessageRepository
                 .OrderByDescending(msg => msg.Date)
                 .Skip((page - 1) * count)
                 .Take(count)
-                .OrderBy(msg => msg.Date)
                 .ToListAsync();
             var serviceMsgs = msgs
                 .Select(msg => msg.ToServiceModel());

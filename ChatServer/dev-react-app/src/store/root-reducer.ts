@@ -1,3 +1,4 @@
+import { chatPageReducer } from './../reducers/chat-page.reducer';
 import { searchUserReducer } from './../reducers/search-user.reducer';
 import { userReducer } from './../reducers/user-login.reducer';
 import { combineReducers } from 'redux';
@@ -11,6 +12,7 @@ const createRootReducer = () => combineReducers({
   chats: chatListReducer,
   users: searchUserReducer,
   changePasswordStatus: changePasswordReducer,
+  page: chatPageReducer,
 });
 
 export default createRootReducer;
