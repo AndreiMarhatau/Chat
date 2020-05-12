@@ -1,9 +1,11 @@
 # Chat
 ASP .NET Core WebApi + React/Redux (typescript)
 
-To start this application you have to install node.js from https://nodejs.org/.<br>
-Clone the repository with Visual Studio 2019 and try to run project "ChatServer".<br>
-If there will be some problems, open a terminal in directory "ChatServer/dev-react-app" and run command "npm i".<br>
-Try it out again.
+To start this application you must have installed node.js from https://nodejs.org/.<br>
+Clone the repository with Visual Studio 2019. Open terminal in folder "ChatServer/dev-react-app" and run commands:<br>
+<code>npm i</code><br>
+<code>npm run build:dev</code>
+
+After you may start ASP-application and see in a browser react-application.
 
 Pay attention, you need to have installed package for web development for Visual studio with .NET Core 3.1.
