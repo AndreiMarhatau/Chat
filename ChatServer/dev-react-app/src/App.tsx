@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
-import './App.scss';
+import React, { useEffect, Suspense } from 'react';
+import styles from './App.scss';
 import { useDispatch } from 'react-redux';
 import { Routes } from './root-router';
 import { Route, BrowserRouter } from 'react-router-dom';
 import { getUser } from './actions/user-login.action';
+import { styleNames } from './services/styleNames';
+
+const sn = styleNames(styles);
 
 
 function App() {
@@ -11,9 +14,11 @@ function App() {
 
   useEffect(() => { dispatch(getUser()); });
   return (
-    <BrowserRouter>
-      <Route component={Routes}></Route>
-    </BrowserRouter>
+    <Suspense fallback={<span className={sn('loading')}>Loading...</span>}>
+      <BrowserRouter>
+        <Route component={Routes}></Route>
+      </BrowserRouter>
+    </Suspense>
   );
 }
 
