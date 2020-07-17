@@ -1,5 +1,5 @@
 import React from "react"
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import Logo from "./Logo/Logo";
 import Search from "./Search/Search";
 import SignIn from "./LoginButtons/SignIn/SignIn";
@@ -9,11 +9,12 @@ import ProfileButton from "./Profile/ProfileButton";
 import styles from './HeaderContainer.scss';
 import { styleNames } from "../../services/styleNames";
 import { isUserLoggedSelector } from "../../selectors/user-logged.selector";
+import { addAlert } from "../../actions/add-alert.action";
+import { AlertType } from "../../interfaces/IAlert";
 
 const sn = styleNames(styles);
 
 const HeaderContainer: React.FC = () => {
-
     const isUserLogged = useSelector(isUserLoggedSelector);
     let search;
     let signin;

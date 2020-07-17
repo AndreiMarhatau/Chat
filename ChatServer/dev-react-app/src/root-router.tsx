@@ -2,11 +2,9 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router";
 import HeaderContainer from "./containers/HeaderContainer/HeaderContainer";
 import { routesMap } from "./constants/routes";
-//import AuthContainer from "./containers/AuthContainer/AuthContainer";
 import { useSelector } from "react-redux";
 import { isUserLoggedSelector } from "./selectors/user-logged.selector";
-//import MainContainer from "./containers/MainContainer/MainContainer";
-//import ProfileContainer from "./containers/ProfileContainer/ProfileContainer";
+import AlertContainer from "./containers/AlertContainer/AlertContainer";
 
 const AuthContainer = React.lazy(() => import("./containers/AuthContainer/AuthContainer"));
 const MainContainer = React.lazy(() => import("./containers/MainContainer/MainContainer"));

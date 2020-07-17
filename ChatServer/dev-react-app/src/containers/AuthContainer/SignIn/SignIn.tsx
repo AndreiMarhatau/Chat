@@ -3,6 +3,8 @@ import styles from './SignIn.scss';
 import { styleNames } from '../../../services/styleNames';
 import { useDispatch } from 'react-redux';
 import { signInUser } from '../../../actions/sign-in-user.action';
+import { addAlert } from '../../../actions/add-alert.action';
+import { AlertType } from '../../../interfaces/IAlert';
 
 const sn = styleNames(styles);
 

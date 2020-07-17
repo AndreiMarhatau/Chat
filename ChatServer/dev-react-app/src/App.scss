@@ -1,5 +1,8 @@
 .loading{
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+  height: 100vh;
 }
